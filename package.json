@@ -6,18 +6,41 @@
     "start": "next start"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "next": "latest",
+    "next-auth": "^4.0.0-beta.7",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "spotify-web-api-node": "^5.0.2",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
     "@types/node": "17.0.4",
     "@types/react": "17.0.38",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
     "autoprefixer": "^10.4.0",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
     "postcss": "^8.4.5",
-    "prettier": "^2.5.1",
+    "prettier": "^2.6.2",
     "prettier-plugin-tailwindcss": "^0.1.1",
     "tailwindcss": "^3.0.7",
     "typescript": "4.5.4"
-  }
+  },
+  "name": "spotify-clone",
+  "description": "This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).",
+  "version": "1.0.0",
+  "main": "next.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
