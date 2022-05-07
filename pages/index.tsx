@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 
 export default Home
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps(context: any) {
   const session = await getSession(context)
   return {
     props: {
