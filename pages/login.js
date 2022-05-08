@@ -11,6 +11,7 @@ function Login({ providers }) {
         <div key={provider.name}>
           <button
             className="rounded-full bg-[#18D860] p-5 text-white"
+            type="button"
             onClick={() => signIn(provider.id, { callbackUrl: '/' })}
           >
             Login with {provider.name}
