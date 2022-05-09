@@ -1,9 +1,8 @@
-import React from 'react'
-import useSpotify from '../hooks/useSpotify'
+import React, { useEffect } from 'react'
 import { useRecoilValue, useRecoilState } from 'recoil'
 import { useSession } from 'next-auth/react'
+import useSpotify from '../hooks/useSpotify'
 import { playlistState } from '../atoms/playlistAtom'
-import { useEffect } from 'react'
 import Song from './Song'
 
 function Songs() {

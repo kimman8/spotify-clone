@@ -1,11 +1,11 @@
 import { ChevronDownIcon } from '@heroicons/react/outline'
-import { playlistState, playlistIdState } from '../atoms/playlistAtom'
 import { shuffle } from 'lodash'
 import { useEffect, useState } from 'react'
 import { signOut, useSession } from 'next-auth/react'
 import { useRecoilValue, useRecoilState } from 'recoil'
+import { playlistState, playlistIdState } from '../atoms/playlistAtom'
 import useSpotify from '../hooks/useSpotify'
-import Songs from '../components/Songs'
+import Songs from './Songs'
 
 const colors = [
   'from-indigo-500',
