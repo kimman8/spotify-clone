@@ -11,7 +11,7 @@ import {
   VolumeUpIcon,
   SwitchHorizontalIcon,
 } from '@heroicons/react/solid'
-import { useSession } from 'next-auth/client'
+import { useSession } from 'next-auth/react'
 import { debounce } from 'lodash'
 import React, { useEffect, useState, useCallback } from 'react'
 import { useRecoilState } from 'recoil'

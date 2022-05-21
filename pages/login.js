@@ -1,4 +1,4 @@
-import { getProviders, signIn } from 'next-auth/client'
+import { getProviders, signIn } from 'next-auth/react'
 function Login({ providers }) {
   return (
     <div className="flex min-h-screen  w-full flex-col items-center justify-center bg-black">
