@@ -28,8 +28,8 @@ export async function middleware(req) {
   const { pathname } = req.nextUrl
 
   // ALlow the request if the following is true:
-  // 1) it's a request to next-auth session
-  // 2) the token exists
+  // 1 it's a request to next-auth session
+  // 2 the token exists
 
   if (pathname.includes('/api/auth') || token) {
     return NextResponse.next()
