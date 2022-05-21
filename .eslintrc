@@ -4,6 +4,7 @@
     // "react/no-unescaped-entities": "off",
     // "@next/next/no-page-custom-font": "off"
     // "semi": "error"
+    "no-unused-vars": "off"
   },
   "env": {
     "browser": true,
