@@ -3,6 +3,7 @@
   "rules": {
     // "react/no-unescaped-entities": "off",
     // "@next/next/no-page-custom-font": "off"
+    "semi": "error"
   },
   "env": {
     "browser": true,
@@ -10,7 +11,7 @@
     "es6": true
   },
   "parserOptions": {
-    // "ecmaVersion": "latest",
+    "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
