@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useRecoilValue, useRecoilState } from 'recoil'
-import { useSession } from 'next-auth/react'
+import { useSession } from 'next-auth/client'
 import useSpotify from '../hooks/useSpotify'
 import { playlistState } from '../atoms/playlistAtom'
 import Song from './Song'
