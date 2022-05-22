@@ -7,8 +7,8 @@ function Login({ providers }) {
         src="https://links.papareact.com/9xl"
         alt="spotify logo"
         className="mb-5 h-52"
-        width={500}
-        height={500}
+        width={250}
+        height={250}
       />
       {Object.values(providers).map((provider) => (
         <div key={provider.name}>
