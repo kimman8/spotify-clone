@@ -23,7 +23,7 @@ function Song({ track, order }) {
       onClick={playSong}
     >
       <div className="flex items-center space-x-4 ">
-        <p>{order + 1}</p>
+        <p className="mr-4">{order + 1}</p>
         {track?.track?.album?.images.length > 0 && (
           <Image
             className="h-10 w-10"

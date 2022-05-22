@@ -8,6 +8,7 @@ module.exports = {
       'i.scdn.co',
       'mosaic.scdn.co',
       'dailymix-images.scdn.co',
+      'scontent-ort2-1.xx.fbcdn.net',
     ],
   },
 }
