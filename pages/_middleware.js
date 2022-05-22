@@ -37,6 +37,6 @@ export async function middleware(req) {
 
   // redirect to login page if the user is not logged in and they are requesting a protected routeing a protected route
   if (!token && pathname !== url.pathname) {
-    return NextResponse.rewrite(url)
+    return NextResponse.rewrite(new URL('/login', req.url))
   }
 }
