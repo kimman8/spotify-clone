@@ -49,6 +49,8 @@ function Center() {
             className="h-10 w-10 rounded-full"
             src={session?.user.image}
             alt=""
+            width={250}
+            height={250}
           />
           <h2>{session?.user.name}</h2>
           <ChevronDownIcon className="h-5 w-5" />
@@ -61,6 +63,8 @@ function Center() {
           src={playlist?.images?.[0].url}
           alt=""
           className=" h-44 w-44 shadow-2xl"
+          width={250}
+          height={250}
         />
         <div>
           <p>PLAYLIST</p>

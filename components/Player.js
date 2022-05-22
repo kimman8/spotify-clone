@@ -80,6 +80,8 @@ function Player() {
           src={songInfo?.album?.images?.[0].url}
           alt=""
           className="hidden h-10 w-10 md:inline"
+          width={250}
+          height={250}
         />
         <div>
           <h3>{songInfo?.name}</h3>
