@@ -76,13 +76,17 @@ function Player() {
     <div className="grid h-24 grid-cols-3 bg-gradient-to-b from-black to-gray-900 px-2 text-xs text-white md:px-8 md:text-base">
       {/* left side */}
       <div className="flex items-center space-x-4">
-        <Image
-          src={songInfo?.album?.images?.[0].url}
-          alt=""
-          className="hidden h-10 w-10 md:inline"
-          width={250}
-          height={250}
-        />
+        {songInfo?.album?.images?.length > 0 && (
+          <Image
+            src={songInfo?.album?.images?.[0]?.url}
+            alt=""
+            className="hidden h-10 w-10 md:inline"
+            width={40}
+            height={40}
+            layout="fixed"
+          />
+        )}
+
         <div>
           <h3>{songInfo?.name}</h3>
           <p>{songInfo?.artists?.[0]?.name}</p>

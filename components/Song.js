@@ -24,11 +24,17 @@ function Song({ track, order }) {
     >
       <div className="flex items-center space-x-4 ">
         <p>{order + 1}</p>
-        <Image
-          className="h-10 w-10"
-          src={track.track.album.images?.[0].url}
-          alt=""
-        />
+        {track?.track?.album?.images.length > 0 && (
+          <Image
+            className="h-10 w-10"
+            src={track?.track?.album?.images?.[0]?.url}
+            alt=""
+            width={40}
+            height={40}
+            layout="fixed"
+          />
+        )}
+
         <div>
           <p className="w-36 truncate text-white lg:w-64">{track.track.name}</p>
           <p className="w-40 ">{track.track.artists[0].name}</p>

@@ -47,10 +47,11 @@ function Center() {
         >
           <Image
             className="h-10 w-10 rounded-full"
-            src={session?.user.image}
+            src={session?.user?.image}
             alt=""
-            width={250}
-            height={250}
+            width={40}
+            height={40}
+            layout="fixed"
           />
           <h2>{session?.user.name}</h2>
           <ChevronDownIcon className="h-5 w-5" />
@@ -59,13 +60,17 @@ function Center() {
       <section
         className={`flex h-80 items-end  space-x-7 bg-gradient-to-b p-8 ${color} to-black text-white`}
       >
-        <Image
-          src={playlist?.images?.[0].url}
-          alt=""
-          className=" h-44 w-44 shadow-2xl"
-          width={250}
-          height={250}
-        />
+        {playlist?.images?.length > 0 && (
+          <Image
+            src={playlist?.images?.[0]?.url}
+            alt=""
+            className=" h-44 w-44 shadow-2xl"
+            width={176}
+            height={176}
+            layout="fixed"
+          />
+        )}
+
         <div>
           <p>PLAYLIST</p>
           <h1 className="text-2xl font-bold md:text-3xl xl:text-5xl">
