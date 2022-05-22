@@ -1,11 +1,12 @@
 import { ChevronDownIcon } from '@heroicons/react/outline'
 import { shuffle } from 'lodash'
 import { useEffect, useState } from 'react'
-import { signOut, useSession } from 'next-auth/react'
+import { signOut, useSession } from 'next-auth/client'
 import { useRecoilValue, useRecoilState } from 'recoil'
 import { playlistState, playlistIdState } from '../atoms/playlistAtom'
 import useSpotify from '../hooks/useSpotify'
 import Songs from './Songs'
+import Image from 'next/image'
 
 const colors = [
   'from-indigo-500',
@@ -44,7 +45,7 @@ function Center() {
           className="flex cursor-pointer items-center space-x-3 rounded-full bg-black p-1 pr-3 text-white opacity-90 hover:opacity-80 "
           onClick={signOut}
         >
-          <img
+          <Image
             className="h-10 w-10 rounded-full"
             src={session?.user.image}
             alt=""

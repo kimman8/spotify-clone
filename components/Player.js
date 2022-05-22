@@ -11,13 +11,14 @@ import {
   VolumeUpIcon,
   SwitchHorizontalIcon,
 } from '@heroicons/react/solid'
-import { useSession } from 'next-auth/react'
+import { useSession } from 'next-auth/client'
 import { debounce } from 'lodash'
 import React, { useEffect, useState, useCallback } from 'react'
 import { useRecoilState } from 'recoil'
 import { currentTrackIdState, isPlayingState } from '../atoms/songAtom'
 import useSpotify from '../hooks/useSpotify'
 import useSongInfo from '../lib/useSongInfo'
+import Image from 'next/image'
 
 function Player() {
   const spotifyApi = useSpotify()
@@ -75,7 +76,7 @@ function Player() {
     <div className="grid h-24 grid-cols-3 bg-gradient-to-b from-black to-gray-900 px-2 text-xs text-white md:px-8 md:text-base">
       {/* left side */}
       <div className="flex items-center space-x-4">
-        <img
+        <Image
           src={songInfo?.album?.images?.[0].url}
           alt=""
           className="hidden h-10 w-10 md:inline"

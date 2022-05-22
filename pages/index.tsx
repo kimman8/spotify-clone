@@ -3,7 +3,7 @@ import Sidebar from '../components/Sidebar'
 import Center from '../components/Center'
 import Player from '../components/Player'
 import Head from 'next/head'
-import { getSession } from 'next-auth/react'
+import { getSession } from 'next-auth/client'
 
 const Home: NextPage = () => {
   return (
