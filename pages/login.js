@@ -3,10 +3,12 @@ import Image from 'next/image'
 function Login({ providers }) {
   return (
     <div className="flex min-h-screen  w-full flex-col items-center justify-center bg-black">
-      <img
+      <Image
         src="https://links.papareact.com/9xl"
         alt="spotify logo"
         className="mb-5 h-52"
+        width={500}
+        height={500}
       />
       {Object.values(providers).map((provider) => (
         <div key={provider.name}>
